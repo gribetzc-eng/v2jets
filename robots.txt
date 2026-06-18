@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://v2jets-site.vercel.app/sitemap.xml
+Sitemap: https://gribetzc-eng.github.io/v2jets/sitemap.xml

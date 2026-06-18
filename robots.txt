@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://v2jets-site.vercel.app/sitemap.xml

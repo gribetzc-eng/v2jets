@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>V2 Jets — The World Awaits</title>
+<meta name="description" content="V2 Jets — private jet charter excellence. From the ground to the skies, a life of effortless luxury is our client's right." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200;300;400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+<link rel="canonical" href="https://v2jets-site.vercel.app/" />
+<meta name="theme-color" content="#0A0A0A" />
+<meta name="author" content="V2 Jets" />
+<!-- Favicons -->
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png" />
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+<!-- Open Graph / social -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="V2 Jets" />
+<meta property="og:title" content="V2 Jets — The World Awaits" />
+<meta property="og:description" content="V2 Jets — private jet charter excellence. From the ground to the skies, a life of effortless luxury is our client&#x27;s right." />
+<meta property="og:image" content="https://v2jets-site.vercel.app/assets/og/og-home.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://v2jets-site.vercel.app/" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="V2 Jets — The World Awaits" />
+<meta name="twitter:description" content="V2 Jets — private jet charter excellence. From the ground to the skies, a life of effortless luxury is our client&#x27;s right." />
+<meta name="twitter:image" content="https://v2jets-site.vercel.app/assets/og/og-home.jpg" />
+</head>
+<body>
+
+<!-- ===== Intro curtain ===== -->
+<div class="intro" id="intro" aria-hidden="true">
+  <img class="intro__logo" src="brand/logos/Logo_V2-White-wordmark.png" alt="V2 Jets" />
+  <span class="intro__line"></span>
+</div>
+
+<!-- ===== Cinematic overlays (film grain, vignette, particles) ===== -->
+<div class="fx-grain" aria-hidden="true"></div>
+<div class="fx-vignette" aria-hidden="true"></div>
+<div class="fx-particles" aria-hidden="true">
+  <span></span><span></span><span></span><span></span><span></span>
+  <span></span><span></span><span></span><span></span><span></span>
+</div>
+
+<!-- ===== Scroll progress + section index ===== -->
+<div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+<div class="section-index" aria-hidden="true"><span id="secNum">01</span><i>/</i><span id="secTotal">09</span></div>
+
+<!-- ===== Nav ===== -->
+<header class="nav" id="nav">
+  <a class="nav__logo" href="#hero" aria-label="V2 Jets home">
+    <img src="brand/logos/Logo_V2-White-wordmark.png" alt="V2 Jets" />
+  </a>
+  <nav class="nav__links">
+    <a href="aircraft.html">The Aircraft</a>
+    <a href="charter.html">Charter</a>
+    <a href="about.html">About</a>
+    <a href="safety.html">Safety</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="nav__right">
+    <a class="nav__cta" href="contact.html">Book Now</a>
+    <button class="nav__menu" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ===== Full-screen menu — links to the real V2 Jets pages ===== -->
+<div class="menu" id="menu" aria-hidden="true">
+  <div class="menu__inner">
+    <nav class="menu__nav" aria-label="V2 Jets site menu">
+      <a href="aircraft.html" style="--d:.05s"><span>01</span>The Aircraft</a>
+      <a href="charter.html" style="--d:.10s"><span>02</span>Charter</a>
+      <a href="about.html" style="--d:.15s"><span>03</span>About Us</a>
+      <a href="brief.html" style="--d:.20s"><span>04</span>The V2 Brief</a>
+      <a href="safety.html" style="--d:.25s"><span>05</span>Safety</a>
+      <a href="contact.html" style="--d:.30s"><span>06</span>Contact</a>
+    </nav>
+    <div class="menu__foot">
+      <a class="menu__book" href="contact.html">Book Now</a>
+      <a href="https://client.v2jets.com" target="_blank" rel="noopener noreferrer">Client Portal</a>
+      <div class="menu__social">
+        <a href="https://www.instagram.com/v2jets/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.linkedin.com/company/v2jets/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://www.facebook.com/v2jets/" target="_blank" rel="noopener noreferrer">Facebook</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main>
+
+  <!-- 01 — HERO / BOOK CTA  (scroll-scrubbed landing) -->
+  <section class="scene" id="hero">
+    <div class="scene__pin" data-index="01" data-tint="dark">
+      <div class="scene__cam" id="heroCam">
+        <img class="scene__poster" src="assets/ext/g700-inflight.webp" alt="Private jet on final approach at sunset" />
+        <video class="scene__video" id="heroVideo" src="assets/ext/g700-landing.mp4" muted playsinline preload="auto" poster="assets/ext/g700-inflight.webp"></video>
+      </div>
+      <div class="scene__inner panel__inner">
+        <span class="eyebrow">— Your journey begins</span>
+        <h2 class="display sm">Book Your<br>Luxury Flight</h2>
+        <a class="btn btn--solid" href="tel:+12122048422">Call (212) 204-8422</a>
+        <p class="lede">Los Angeles · Chicago · New Jersey · New York · Florida</p>
+      </div>
+      <div class="scroll-cue" aria-hidden="true"><span>Scroll to land</span><i></i></div>
+    </div>
+  </section>
+
+  <!-- 02 — FLY IN ABSOLUTE LUXURY (cabin split — full photo visible) -->
+  <section class="luxsplit" id="luxury" data-index="02">
+    <div class="luxsplit__text">
+      <span class="eyebrow reveal">— The Charter</span>
+      <h2 class="title reveal">Fly In<br>Absolute Luxury</h2>
+      <p class="reveal">Your personal charter specialist orchestrates every detail — ground transport, accommodation, private terminal access and bespoke in-flight catering. Step aboard your private jet and the world slows down.</p>
+    </div>
+    <div class="luxsplit__media"><img loading="lazy" src="assets/ext/g700-cabin-dining.webp" alt="Private jet cabin — dining area with crystal and sunset windows" /></div>
+  </section>
+
+  <!-- 03 — UNFORGETTABLE JOURNEY (jet in flight) -->
+  <section class="panel split right" id="journey" data-index="03" data-tint="ink">
+    <div class="panel__bg" data-speed="0.12"><img loading="lazy" src="assets/ext/g700-inflight.webp" alt="Private jet in flight above golden clouds at sunset" data-fallback="brand/images/plane-exterior.jpg" /></div>
+    <div class="panel__inner">
+      <div class="jtext reveal">
+        <span class="eyebrow">02 — In flight</span>
+        <h2 class="title">An Unforgettable<br>Journey</h2>
+        <p>Climb to forty-five thousand feet aboard an ultra-long-range jet and watch continents pass beneath you. We turn building strong personal relationships into an art form — no request is too large.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 — THE PRIVATE SUITE (overnight / ultra-long-range) -->
+  <section class="panel suite" id="suite" data-index="04" data-tint="dark">
+    <div class="panel__bg" data-speed="0.14"><img loading="lazy" src="assets/img/jet-bedroom.webp" alt="Private stateroom aboard an ultra-long-range jet — a turned-down bed with city lights through the window at night" data-fallback="brand/images/interior-bedroom.jpg" /></div>
+    <div class="panel__inner">
+      <span class="eyebrow reveal">— The private suite</span>
+      <h2 class="statement reveal">Sleep Above<br><em>the world.</em></h2>
+      <p class="lede reveal">Aboard an ultra-long-range jet, your stateroom is turned down at altitude. Cross oceans in a private bed and arrive rested &mdash; as though the distance never happened.</p>
+    </div>
+  </section>
+
+  <!-- 05 — TRUST / SAFETY -->
+  <section class="panel trust" id="trust" data-index="05" data-tint="dark">
+    <div class="panel__bg" data-speed="0.16"><img loading="lazy" src="assets/ext/g700-nose-detail.webp" alt="Private jet nose and cockpit detail" data-fallback="brand/images/plane-exterior.jpg" /></div>
+    <div class="panel__inner">
+      <span class="eyebrow reveal">— Safety</span>
+      <h2 class="statement reveal">Trust is<br><em>our bond.</em></h2>
+      <p class="lede reveal">We work only with capable, qualified aviation crews flying the world's fastest and safest aircraft — every flight verified through a thorough safety review.</p>
+    </div>
+  </section>
+
+  <!-- 06 — FINALE  (scroll-scrubbed orbit walkaround) -->
+  <section class="scene" id="book" data-reveal="in">
+    <div class="scene__pin" data-index="06" data-tint="dark">
+      <div class="scene__cam">
+        <img class="scene__poster" loading="lazy" src="assets/ext/g700-hero-frontquarter.webp" alt="Private jet on the tarmac at golden hour" />
+        <video class="scene__video" id="ctaVideo" src="assets/ext/g700-orbit.mp4" muted playsinline preload="auto" poster="assets/ext/g700-hero-frontquarter.webp"></video>
+      </div>
+      <div class="scene__inner panel__inner hero__inner">
+        <span class="eyebrow" data-coord>[ 40° 42′ N · 74° 00′ W — ON DEMAND, WORLDWIDE ]</span>
+        <h1 class="display">The World<br>Awaits</h1>
+        <p class="lede">The skies are the limit. From the ground to the skies, a life of effortless luxury is our client's right.</p>
+        <a class="btn" href="#hero">Book your flight</a>
+      </div>
+      <div class="scroll-cue" aria-hidden="true"><span>Scroll to orbit</span><i></i></div>
+    </div>
+  </section>
+
+  <!-- 07 — THE FLEET (horizontal carousel) -->
+  <section class="fleet" id="fleet" data-index="07" data-tint="ink">
+    <div class="fleet__head">
+      <span class="eyebrow reveal">— The Aircraft</span>
+      <h2 class="title reveal">Take To The Skies<br>In Style</h2>
+      <p class="reveal">Seven tiers of aircraft, from nimble turboprops to the ultra-long-range flagship. Drag, scroll or swipe.</p>
+    </div>
+    <div class="fleet__track" id="fleetTrack" data-lenis-prevent>
+      <article class="fcard" style="--img:url('assets/fleet/01-turboprop-pc12.jpg')"><span class="fnum">01</span><h3>Turbo Prop</h3><p>Short hops, effortless efficiency.</p></article>
+      <article class="fcard" style="--img:url('assets/fleet/02-lightjet-phenom300.jpg')"><span class="fnum">02</span><h3>Light Jet</h3><p>Agile speed for regional travel.</p></article>
+      <article class="fcard" style="--img:url('assets/fleet/03-midsize-citation.jpg')"><span class="fnum">03</span><h3>Mid Size</h3><p>Stand-up cabins, coast to coast.</p></article>
+      <article class="fcard" style="--img:url('assets/fleet/04-supermid-challenger350.jpg')"><span class="fnum">04</span><h3>Super Mid</h3><p>Transcontinental in true comfort.</p></article>
+      <article class="fcard" style="--img:url('assets/fleet/05-heavy-g550.jpg')"><span class="fnum">05</span><h3>Heavy Jet</h3><p>Spacious cabins for the whole party.</p></article>
+      <article class="fcard" style="--img:url('assets/fleet/06-ulr-g650.jpg')"><span class="fnum">06</span><h3>Ultra Long Range</h3><p>Nonstop, anywhere on earth.</p></article>
+      <article class="fcard fcard--flag" style="--img:url('assets/fleet/07-obsidian-bbj.jpg')"><span class="fnum">07</span><h3>Obsidian</h3><p>The flagship tier. By invitation.</p></article>
+    </div>
+  </section>
+
+  <!-- 08 — FOOTER -->
+  <footer class="footer" id="footer" data-index="08">
+    <div class="footer__top">
+      <img class="footer__logo" src="brand/logos/Logo_V2-White-top-original.png" alt="V2 Jets" />
+      <div class="footer__links">
+        <a href="aircraft.html">The Aircraft</a><a href="charter.html">Charter</a><a href="about.html">About</a>
+        <a href="safety.html">Safety</a><a href="contact.html">Contact</a><a href="https://client.v2jets.com" target="_blank" rel="noopener noreferrer">Client Portal</a>
+      </div>
+      <div class="footer__social"><a href="#">Instagram</a><a href="#">LinkedIn</a><a href="#">Facebook</a></div>
+    </div>
+    <p class="footer__legal">© 2026 V2 Jets. All rights reserved. V2 Jets, LLC is an Air Charter Broker and not a U.S. or foreign direct air carrier in operational control of aircraft.</p>
+  </footer>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/enhance.js"></script>
+</body>
+</html>
